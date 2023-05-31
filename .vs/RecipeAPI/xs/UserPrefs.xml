@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{CE5604E4-4422-4CE3-B6A3-36652838AAD3}|https">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.RecipeAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RecipeAPI/DAL/RecipeDbContext.cs">
+    <Files>
+      <File FileName="RecipeAPI/Program.cs" Line="9" Column="1" />
+      <File FileName="RecipeAPI/appsettings.json" Line="10" Column="23" />
+      <File FileName="RecipeAPI/DAL/RecipeDbContext.cs" Line="14" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RecipeAPI" expanded="True">
+            <Node name="RecipeAPI" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="DAL" expanded="True">
+                <Node name="RecipeDbContext.cs" selected="True" />
+              </Node>
+              <Node name="Model" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
