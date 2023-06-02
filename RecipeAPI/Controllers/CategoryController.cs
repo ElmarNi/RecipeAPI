@@ -11,7 +11,7 @@ using RecipeAPI.Model;
 namespace RecipeAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[action]")]
     public class CategoryController : ControllerBase
     {
         private RecipeDbContext _context;
@@ -24,7 +24,8 @@ namespace RecipeAPI.Controllers
         }
 
         [HttpGet(Name = "GetCategories")]
-        public IEnumerable<Category> Get()
+        //[Route("get")]
+        public IEnumerable<Category> GetCategories()
         {
             return _context.categories.ToList();
         }
