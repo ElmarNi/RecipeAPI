@@ -1,29 +1,33 @@
 ﻿<Properties StartupConfiguration="{CE5604E4-4422-4CE3-B6A3-36652838AAD3}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="RecipeAPI/Program.cs">
+  <MonoDevelop.Ide.ItemProperties.RecipeAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RecipeAPI/Controllers/RecipeController.cs">
     <Files>
-      <File FileName="RecipeAPI/Controllers/CategoryController.cs" Line="19" Column="1" />
-      <File FileName="RecipeAPI/appsettings.json" Line="1" Column="1" />
-      <File FileName="RecipeAPI/Program.cs" Line="20" Column="11" />
+      <File FileName="RecipeAPI/Model/Recipe.cs" />
+      <File FileName="RecipeAPI/Model/Category.cs" />
+      <File FileName="RecipeAPI/DAL/RecipeDbContext.cs" />
+      <File FileName="RecipeAPI/Controllers/CategoryController.cs" Line="1" Column="1" />
+      <File FileName="RecipeAPI/Controllers/RecipeController.cs" Line="18" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RecipeAPI" expanded="True">
             <Node name="RecipeAPI" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="RecipeController.cs" selected="True" />
+              </Node>
+              <Node name="DAL" expanded="True" />
+              <Node name="Migrations" expanded="True" />
               <Node name="Model" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
-              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.RecipeAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
