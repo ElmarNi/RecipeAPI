@@ -1,14 +1,11 @@
 ﻿<Properties StartupConfiguration="{CE5604E4-4422-4CE3-B6A3-36652838AAD3}|https">
-  <MonoDevelop.Ide.ItemProperties.RecipeAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="RecipeAPI/Controllers/RecipeController.cs">
     <Files>
       <File FileName="RecipeAPI/Model/Recipe.cs" />
-      <File FileName="RecipeAPI/Model/Category.cs" />
+      <File FileName="RecipeAPI/Model/Category.cs" Line="12" Column="1" />
       <File FileName="RecipeAPI/DAL/RecipeDbContext.cs" />
-      <File FileName="RecipeAPI/Controllers/CategoryController.cs" Line="1" Column="1" />
-      <File FileName="RecipeAPI/Controllers/RecipeController.cs" Line="18" Column="16" />
+      <File FileName="RecipeAPI/Controllers/CategoryController.cs" />
+      <File FileName="RecipeAPI/Controllers/RecipeController.cs" Line="42" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -27,8 +24,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.RecipeAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
