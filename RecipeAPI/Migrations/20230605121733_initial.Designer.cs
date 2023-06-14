@@ -13,7 +13,7 @@ namespace RecipeAPI.Migrations
 {
     [DbContext(typeof(RecipeDbContext))]
     [Migration("20230605121733_initial")]
-    partial class initial
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

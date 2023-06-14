@@ -8,6 +8,9 @@
 /Users/ibrahimlien/Desktop/BackEnd/RecipeAPI/RecipeAPI/bin/Debug/net7.0/Azure.Core.dll
 /Users/ibrahimlien/Desktop/BackEnd/RecipeAPI/RecipeAPI/bin/Debug/net7.0/Azure.Identity.dll
 /Users/ibrahimlien/Desktop/BackEnd/RecipeAPI/RecipeAPI/bin/Debug/net7.0/Humanizer.dll
+/Users/ibrahimlien/Desktop/BackEnd/RecipeAPI/RecipeAPI/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/ibrahimlien/Desktop/BackEnd/RecipeAPI/RecipeAPI/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/ibrahimlien/Desktop/BackEnd/RecipeAPI/RecipeAPI/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Users/ibrahimlien/Desktop/BackEnd/RecipeAPI/RecipeAPI/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
 /Users/ibrahimlien/Desktop/BackEnd/RecipeAPI/RecipeAPI/bin/Debug/net7.0/Microsoft.AspNetCore.Razor.Language.dll
 /Users/ibrahimlien/Desktop/BackEnd/RecipeAPI/RecipeAPI/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
@@ -37,6 +40,9 @@
 /Users/ibrahimlien/Desktop/BackEnd/RecipeAPI/RecipeAPI/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
 /Users/ibrahimlien/Desktop/BackEnd/RecipeAPI/RecipeAPI/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.SqlServer.dll
 /Users/ibrahimlien/Desktop/BackEnd/RecipeAPI/RecipeAPI/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/Users/ibrahimlien/Desktop/BackEnd/RecipeAPI/RecipeAPI/bin/Debug/net7.0/Microsoft.Extensions.Identity.Core.dll
+/Users/ibrahimlien/Desktop/BackEnd/RecipeAPI/RecipeAPI/bin/Debug/net7.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/ibrahimlien/Desktop/BackEnd/RecipeAPI/RecipeAPI/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
 /Users/ibrahimlien/Desktop/BackEnd/RecipeAPI/RecipeAPI/bin/Debug/net7.0/Microsoft.Identity.Client.dll
 /Users/ibrahimlien/Desktop/BackEnd/RecipeAPI/RecipeAPI/bin/Debug/net7.0/Microsoft.Identity.Client.Extensions.Msal.dll
 /Users/ibrahimlien/Desktop/BackEnd/RecipeAPI/RecipeAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
