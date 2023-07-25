@@ -7,6 +7,7 @@ namespace RecipeAPI.Model
     {
         public string? Firstname { get; set; }
         public string? Lastname { get; set; }
+        public virtual List<Favorite> Favorites { get; set; }
     }
 }
 

@@ -23,8 +23,8 @@ namespace RecipeAPI.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetCategories")]
-        public IEnumerable<Category> GetCategories()
+        [HttpGet(Name = "GetAll")]
+        public IEnumerable<Category> GetAll()
         {
             return _context.categories.ToList();
         }

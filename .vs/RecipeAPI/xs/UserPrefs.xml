@@ -1,17 +1,8 @@
 ﻿<Properties StartupConfiguration="{CE5604E4-4422-4CE3-B6A3-36652838AAD3}|https">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.RecipeAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="RecipeAPI/Controllers/AccountController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RecipeAPI/Controllers/RecipeController.cs">
     <Files>
-      <File FileName="RecipeAPI/Controllers/AccountController.cs" Line="56" Column="13" />
-      <File FileName="RecipeAPI/Model/Register.cs" />
-      <File FileName="RecipeAPI/Model/AccountResponse.cs" />
-      <File FileName="RecipeAPI/Program.cs" />
-      <File FileName="RecipeAPI/Model/Login.cs" />
+      <File FileName="RecipeAPI/Controllers/RecipeController.cs" Line="136" Column="13" />
+      <File FileName="RecipeAPI/Model/Recipe.cs" Line="14" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,12 +11,8 @@
             <Node name="RecipeAPI" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="DAL" expanded="True" />
-              <Node name="Migrations" expanded="True">
-                <Node name="20230605121733_initial.cs" expanded="True" />
-              </Node>
-              <Node name="Model" expanded="True">
-                <Node name="AccountResponse.cs" selected="True" />
-              </Node>
+              <Node name="Migrations" expanded="True" />
+              <Node name="Model" expanded="True" selected="True" />
             </Node>
           </Node>
         </State>
@@ -33,4 +20,10 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.RecipeAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

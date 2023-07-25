@@ -37,14 +37,15 @@ namespace RecipeAPI.Controllers
                 Firstname = model.FirstName,
                 Lastname = model.LastName,
                 Email = model.Email,
-                UserName = model.UserName,
-                PhoneNumber = model.PhoneNumber
+                UserName = model.UserName
             };
             IdentityResult identityResult = await _userManager.CreateAsync(user, model.Password);
 
             if (identityResult.Succeeded)
             {
-                return new AccountResponse { Code = 200 };
+                var createdUser = await _userManager.FindByNameAsync(model.UserName);
+                string userId = createdUser.Id;
+                return new AccountResponse { Code = 200, UserId = userId };
             }
             else
             {
@@ -64,13 +65,22 @@ namespace RecipeAPI.Controllers
 
             if (signInResult.Succeeded)
             {
-                return new AccountResponse { Code = 200 };
+                var user = await _userManager.FindByNameAsync(model.UserName);
+                string userId = user.Id;
+                return new AccountResponse { Code = 200, UserId = userId };
             }
             else
             {
                 return new AccountResponse { Code = 400, Description = "Username or Password wrong" };
             }
 
+        }
+
+        [HttpPost(Name = "GetUser")]
+        public async Task<AppUser> GetUser([FromBody] GetUserModel model)
+        {
+            var user = await _userManager.FindByIdAsync(model.id);
+            return user;
         }
     }
 }

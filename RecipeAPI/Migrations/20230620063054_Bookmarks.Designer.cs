@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RecipeAPI.DAL;
 
@@ -11,9 +12,11 @@ using RecipeAPI.DAL;
 namespace RecipeAPI.Migrations
 {
     [DbContext(typeof(RecipeDbContext))]
-    partial class RecipeDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230620063054_Bookmarks")]
+    partial class Bookmarks
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -226,6 +229,30 @@ namespace RecipeAPI.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("RecipeAPI.Model.Bookmark", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("RecipeId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RecipeId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("bookmarks");
+                });
+
             modelBuilder.Entity("RecipeAPI.Model.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -247,54 +274,6 @@ namespace RecipeAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("categories");
-                });
-
-            modelBuilder.Entity("RecipeAPI.Model.Favorite", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("RecipeId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("RecipeId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("favorites");
-                });
-
-            modelBuilder.Entity("RecipeAPI.Model.Like", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("RecipeId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("RecipeId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("likes");
                 });
 
             modelBuilder.Entity("RecipeAPI.Model.Recipe", b =>
@@ -393,7 +372,7 @@ namespace RecipeAPI.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("RecipeAPI.Model.Favorite", b =>
+            modelBuilder.Entity("RecipeAPI.Model.Bookmark", b =>
                 {
                     b.HasOne("RecipeAPI.Model.Recipe", "Recipe")
                         .WithMany()
@@ -402,26 +381,7 @@ namespace RecipeAPI.Migrations
                         .IsRequired();
 
                     b.HasOne("RecipeAPI.Model.AppUser", "User")
-                        .WithMany("Favorites")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Recipe");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("RecipeAPI.Model.Like", b =>
-                {
-                    b.HasOne("RecipeAPI.Model.Recipe", "Recipe")
-                        .WithMany()
-                        .HasForeignKey("RecipeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("RecipeAPI.Model.AppUser", "User")
-                        .WithMany()
+                        .WithMany("Bookmarks")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -444,7 +404,7 @@ namespace RecipeAPI.Migrations
 
             modelBuilder.Entity("RecipeAPI.Model.AppUser", b =>
                 {
-                    b.Navigation("Favorites");
+                    b.Navigation("Bookmarks");
                 });
 #pragma warning restore 612, 618
         }

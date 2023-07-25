@@ -11,7 +11,7 @@ namespace RecipeAPI.Model
 		public int? People { get; set; }
 		public string? ImageUrl { get; set; }
 		public int CategoryId { get; set; }
-		public virtual Category Category { get; set; }
+		public virtual Category? Category { get; set; }
 		public string Ingridients { get; set; }
 		public int? Likes { get; set; }
 	}
